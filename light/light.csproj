@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="images\header-human-head.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -114,7 +115,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="bootstrap\" />
-    <Folder Include="images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
