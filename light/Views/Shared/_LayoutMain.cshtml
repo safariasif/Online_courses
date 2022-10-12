@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="~/images/light.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body dir="rtl">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#openAndCloseNavbar" aria-controll="openAndCloseNavbar" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse py-2  d-lg-flex justify-content-lg-between flex-row" id="openAndCloseNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" aria-expanded="false" data-bs-toggle="dropdown">دوره های آموزشی</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item  d-flex justify-content-start">
+                                <a class="nav-link " href="#">جاوا اسکریپت</a>
+                            </li>
+                            <li class="dropdown-item d-flex justify-content-start">
+                                <a class="nav-link" href="#">جاوا اسکریپت</a>
+                            </li>
+                            <li class="dropdown-item d-flex justify-content-start">
+                                <a class="nav-link" href="#">جاوا اسکریپت</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">مقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">کانال تلگرام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">نظریات/ پیشنهادات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">درباره چراغ</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ثبت نام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ورود</a>
+                    </li>
+                    <li >
+                        <img src="~/images/light.png" class="img-fluid" style="width:50px; height:50px;"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <div class="footer m-0 p-0 w-100 ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1E3D59" fill-opacity="1" d="M0,160L9.2,149.3C18.5,139,37,117,55,96C73.8,75,92,53,111,74.7C129.2,96,148,160,166,197.3C184.6,235,203,245,222,218.7C240,192,258,128,277,101.3C295.4,75,314,85,332,101.3C350.8,117,369,139,388,154.7C406.2,171,425,181,443,192C461.5,203,480,213,498,218.7C516.9,224,535,224,554,192C572.3,160,591,96,609,85.3C627.7,75,646,117,665,149.3C683.1,181,702,203,720,218.7C738.5,235,757,245,775,234.7C793.8,224,812,192,831,197.3C849.2,203,868,245,886,261.3C904.6,277,923,267,942,250.7C960,235,978,213,997,202.7C1015.4,192,1034,192,1052,170.7C1070.8,149,1089,107,1108,122.7C1126.2,139,1145,213,1163,213.3C1181.5,213,1200,139,1218,117.3C1236.9,96,1255,128,1274,122.7C1292.3,117,1311,75,1329,90.7C1347.7,107,1366,181,1385,218.7C1403.1,256,1422,256,1431,256L1440,256L1440,320L1430.8,320C1421.5,320,1403,320,1385,320C1366.2,320,1348,320,1329,320C1310.8,320,1292,320,1274,320C1255.4,320,1237,320,1218,320C1200,320,1182,320,1163,320C1144.6,320,1126,320,1108,320C1089.2,320,1071,320,1052,320C1033.8,320,1015,320,997,320C978.5,320,960,320,942,320C923.1,320,905,320,886,320C867.7,320,849,320,831,320C812.3,320,794,320,775,320C756.9,320,738,320,720,320C701.5,320,683,320,665,320C646.2,320,628,320,609,320C590.8,320,572,320,554,320C535.4,320,517,320,498,320C480,320,462,320,443,320C424.6,320,406,320,388,320C369.2,320,351,320,332,320C313.8,320,295,320,277,320C258.5,320,240,320,222,320C203.1,320,185,320,166,320C147.7,320,129,320,111,320C92.3,320,74,320,55,320C36.9,320,18,320,9,320L0,320Z"></path></svg>
+
+        <div class="container-fluid  px-5 p-0" style="background-color:#1E3D59">
+            <div class="row m-auto">
+                <div class="col-lg-3">
+                    <h6 class="text-light">درباره چراغ</h6>
+                    <p class="text-light">با چراغ برنامه نویسی به لذت بخش ترین تفریح برایت مبدل میشود با چراغ برنامه نویسی به لذت بخش ترین تفریح برایت مبدل میشود</p>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-light">آدرس ما </h6>
+                    <p class="text-light">با چراغ برنامه نویسی به لذت بخش ترین تفریح برایت مبدل میشود با چراغ برنامه نویسی به لذت بخش ترین تفریح برایت مبدل میشود</p>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-light">مارا در صفحات مجازی دنبال کنید</h6>
+                    <div class="d-flex justify-content-around mt-5">
+                        <i class="text-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </i>
+                        <i class="text-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </i>
+                        <i class="text-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </i>
+                    </div>
+                </div>
+                <div class="col-lg-3 justify-content-center d-flex text-align-center">
+                    <img src="~/images/light1.png" style="width:200px;height:150px;" />
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
