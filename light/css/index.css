@@ -1,0 +1,102 @@
+@font-face {
+    font-family: bykan;
+    src: url('BYekan.ttf');
+}
+*{
+    font-family: bykan;
+}
+body{
+    background-color: #eee;
+}
+.sidebar{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)) ,url(../images/sidebar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    box-shadow: -5px 7px 25px #999;
+}
+
+.bottom-border{
+    border-bottom: 1px solid #eee;
+}
+.cuurent{
+    transition: all 0.4s;
+    background-color: rgb(221, 85, 85);
+    border-radius: 7px;
+}
+
+.cuurent:hover{
+    background-color: rgb(216, 57, 57);
+    border-radius: 7px;
+}
+.second-section{
+    
+    border-radius: 7px;
+    transition: 0.4s;
+}
+.second-section:hover{
+    background-color: rgb(148, 147, 147);
+}
+#search-button{
+   padding: 10px 16px;
+   border-radius: 50%;
+   transition: 0.4s;
+}
+#search-button:hover
+{
+    background-color: #eeef;
+    transform: translateY(-1px);
+}
+#search-input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #444;
+    transition: all 0.4s;
+
+}
+#search-input:focus{
+    border-bottom: 2px solid red;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Card Section */
+.card-common{
+    box-shadow: 1px 2px 5px #999;
+    transition: all 0.4s;
+}
+.card-common:hover{
+    box-shadow: 2px 5px 15px #999;
+    transform: translateY(-1);
+}
+
+/* end of Card Style */
+@media(max-width:768px)
+{
+    .navbar-top{
+        position: static;
+    }
+    .sidebar
+    {
+        position: static;
+        height: auto;
+    }
+}
+
+
+
+/* this is Style code of top customer and top product */
+#topCAndP{
+    /* background: linear-gradient(#004645,#4acebd); */
+    background: linear-gradient(#1a2980,#26d0ce);
+}
+#producttable{
+    background: linear-gradient();
+}
+#btncolor{
+    background: linear-gradient(#3e2bee,#169db4);
+}
+#tablecustomer{
+    background: linear-gradient(#2d41f3,#5df8d1);
+}

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: bykan;
+    src: url('BYekan.ttf');
+}
+*{
+    font-family: bykan;
+}

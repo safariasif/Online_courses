@@ -89,11 +89,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstraplink\bootstrap.fa.min.css" />
+    <Content Include="css\font.css" />
+    <Content Include="css\index.css" />
     <Content Include="Global.asax" />
     <Content Include="images\header-human-head.png" />
+    <Content Include="images\java.jpg" />
+    <Content Include="images\java.png" />
     <Content Include="images\light.png" />
     <Content Include="images\light1.png" />
-    <Content Include="Web.config" />
+    <Content Include="images\login.svg" />
+    <Content Include="images\p3.jpg" />
+    <Content Include="images\php.png" />
+    <Content Include="images\python.png" />
+    <Content Include="images\react.png" />
+    <Content Include="images\register.svg" />
+    <Content Include="images\sidebar.jpg" />
+    <Content Include="images\why-light-human.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -108,6 +123,12 @@
     <Content Include="packages.config" />
     <Content Include="Views\Shared\_LayoutMain.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayouAdmin.cshtml" />
+    <Content Include="Views\Home\AdminPage.cshtml" />
+    <Content Include="css\BYekan.ttf" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -117,7 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="bootstrap\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
