@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "ثبت نام";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<section class="container">
+    <div class="mt-5">
+        <button class="btn bg-danger btn-sm float-start"> <a href="/" class="text-white text-decoration-none fw-bold">برگشت</a></button>
+        <h2 class="text-center mt-5 mb-2 fw-bold">صفحه ثبت نام</h2>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <form class="form w-75 mx-auto" action="" method="post">
+                <div class="form-group">
+                    <label for="">نام کامل:</label>
+                    <input class="form-control outline-none" type="text" id="name" name="name" placeholder="نام کامل............" />
+                </div>
+                <div class="form-group">
+                    <label for="">ایمیل:</label>
+                    <input class="form-control outline-none" type="text" id="email" name="email" placeholder="ایمیل............" />
+                </div>
+                <div class="form-group">
+                    <label for="">رمز عبور:</label>
+                    <input class="form-control outline-none" type="password" id="password" name="password" placeholder="رمز عبور............" />
+                </div>
+                <button class="btn btn-block bg-warning text-white w-50 mx-auto mt-5 mb-5" type="submit">ثبت نام</button>
+                <a href="/Login" class="text-decoration-none  text-primary">قبلاً حساب داشتید؟</a>
+            </form>
+        </div>
+        <div class="col-md-6 d-flex text-center justify-content-center">
+            <img src="~/images/register.svg" class="img-fluid"/>
+        </div>
+    </div>
+</section>
+
